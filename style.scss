@@ -14,8 +14,7 @@ body{
 
 section {
   padding: 10px 20px;
-  // min-height: 500px;
-  height: 500px;
+  min-height: 500px;
   border-top: 1px solid #c8c8c8;
 }
 #about {
@@ -49,6 +48,7 @@ nav {
     } //closes li
   } //closes ul
   @media (max-width: 603px) {
+    display: none;
     ul {
       li {
         display: block;
@@ -63,4 +63,17 @@ nav {
   margin: 5px;
   border-radius: 5%;
   display: inline-block;
+}
+.burger-menu.fa.fa-bars{
+  display: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top:0;
+  left:0;
+  font-size: 30px;
+  display: none;
+  @media (max-width: 603px) {
+    display: block;
+  }
 }
